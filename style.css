@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+.left,.right{
+    color: white;
+}
+
+.header{
+  background-color: dimgrey;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:0;
+}
+.college_entrance{
+  background: url("au entrance.png");
+  background-size: cover;
+  padding:200px 0 200px 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.Copyright{
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color:black;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #213a7c;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.19rem;
+  text-transform:uppercase;
+  width:16.66%;
+  font-weight:800;
+  border-right:.01rem solid #fff;
+}
+.topnav a:first-child{
+  border:none;
+}
+.topnav a:hover {
+  background-color: #000;
+  color:#fff;
+}
+
+.topnav a.active {
+  background-color: red;
+}
+
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width:950px){
+  .topnav a{
+    padding:14px 10px;
+    font-size:1.02rem;
+  } 
+}
+@media screen and (max-width: 768px) {
+  .header{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+  }
+.topnav a{
+  width:100%;
+  border-right:none;
+}
+  .topnav a:not(:first-child) {
+    display: none;
+    border-bottom:.01rem solid #fff;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    width:100%;
+  }
+  .topnav.responsive a:first-child,.topnav.responsive a.icon{
+    width:100%;
+  }
+}
+

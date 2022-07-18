@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alogin.css">
+    <title>AUTHENTICATION</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class='container'>
+      <h1>AUTHENTICATION</h1>
+      <button onclick="document.getElementById('id01').style.display='block'">Login As Admin</button>
+      <div id="id01" class="modal modal1">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <form class="modal-content">
+          <div class="container">
+            <h1>Admin Login</h1>
+            <form>
+              <label for="emailValue1"><b>Email</b></label>
+              <input id='emailValue1' type="email" placeholder="Enter Email" name="emailValue1" required>
+              <label for="passwordValue1"><b>Password</b></label>
+              <input id='passwordValue1' type="password" placeholder="Enter Password" name="passwordValue1" required>
+            </form>
+            <div class="clearfix">
+              <button type="button" id="sub1">Login</button>
+              <button type="button" id="sub2"><i class="fa fa-google" aria-hidden="true"></i>Login With Google</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <button onclick="document.getElementById('id02').style.display='block'">Login As Guest</button>
+      <div id="id02" class="modal modal2">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+        <form class="modal-content">
+          <div class="container">
+            <h1>Guest Login</h1>
+            <form>
+              <label for="emailValue2"><b>Email</b></label>
+              <input id='emailValue2' type="email" placeholder="Enter Email" name="emailValue2" required>
+              <label for="passwordValue2"><b>Password</b></label>
+              <input id='passwordValue2' type="password" placeholder="Enter Password" name="passwordValue2" required>
+            </form>
+            <div class="clearfix">
+              <button type="button" id="sub3">Login</button>
+              <button type="button" id="sub4"><i class="fa fa-google" aria-hidden="true"></i>Login With Google</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+      
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <!--https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="alogin.js"></script>
+  </body>
+</html>

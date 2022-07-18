@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body
+{
+font-size:20px;
+font-style:bold;
+background-image: url('courses_offered.png');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
